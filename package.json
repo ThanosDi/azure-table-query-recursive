@@ -1,0 +1,44 @@
+{
+  "name": "azure-table-query-recursive",
+  "version": "0.0.1",
+  "description": "Exports an async recurcive function to fetch more than 1000 entities from azure storage using continuation token.",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "xo",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "azure-storage": "^2.10.3"
+  },
+  "devDependencies": {
+    "husky": "^3.0.4",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.2.3",
+    "nodemon": "^1",
+    "xo": "^0.24.0"
+  },
+  "lint-staged": {
+    "*": [
+      "xo --fix",
+      "git add"
+    ]
+  },
+  "xo": {
+    "prettier": true,
+    "envs": [
+      "jest",
+      "node",
+      "browser"
+    ],
+    "rules": {
+      "camelcase": 1
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  }
+}
