@@ -1,6 +1,6 @@
 {
   "name": "azure-table-query-recursive",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Exports an async recurcive function to fetch more than 1000 entities from azure storage using continuation token.",
   "main": "src/index.js",
   "scripts": {
