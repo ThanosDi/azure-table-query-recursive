@@ -16,7 +16,7 @@ $ yarn install azure-table-query-recursive
 
 ## Usage
 ```javascript
-const {queryAzureTableStorage,TableQuery} = require('azure-table-query-recursive');
+const {queryAzureTableStorage, TableQuery, createTableService} = require('azure-table-query-recursive');
 
 const validConnectionString = 'DefaultEndpointsProtocol=https;AccountName=xxxxxxx;AccountKey=xxxxxxxxxxxxxxxxxxxxxxx==;EndpointSuffix=core.windows.net';
 const query = `PartitionKey eq 'apartitionkey'`;
