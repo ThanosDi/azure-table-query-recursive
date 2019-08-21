@@ -2,7 +2,7 @@
 
 Exports an async recursive function to fetch more than 1000 entities from azure storage using continuation token. :rocket:
 
-
+[![Coverage Status](https://coveralls.io/repos/github/ThanosDi/azure-table-query-recursive/badge.svg?branch=master)](https://coveralls.io/github/ThanosDi/azure-table-query-recursive?branch=master)
 * Master [![CircleCI](https://circleci.com/gh/ThanosDi/azure-table-query-recursive/tree/master.svg?style=svg)](https://circleci.com/gh/ThanosDi/azure-table-query-recursive/tree/master)
 
 ## Development :computer:
