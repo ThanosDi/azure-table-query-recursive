@@ -11,7 +11,9 @@ $ yarn install
 
 ## Install :hammer:
 ```bash
-$ yarn install azure-table-query-recursive
+$ yarn add azure-table-query-recursive
+or
+$ npm install azure-table-query-recursive
 ```
 
 ## Usage
