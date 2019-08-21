@@ -23,6 +23,10 @@ aliases:
     |
       yarn test
 
+  - &yarn-test-ci
+      |
+        yarn test-ci
+
   - &yarn-publish
     |
       yarn publish
@@ -57,8 +61,7 @@ jobs:
       - run: *yarn-install
       - save_cache: *save-yarn-cache
       - run: *yarn-test
-      - store_artifacts:
-          path: coverage
+      - run: *yarn-test-ci
 
   npm_publish:
     docker:
