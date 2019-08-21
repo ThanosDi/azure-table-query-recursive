@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "xo",
-    "test": "jest"
+    "test": "jest --collectCoverage=true"
   },
   "repository": {
     "type": "git",
